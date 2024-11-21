@@ -46,6 +46,18 @@ body {
     max-width: 600px; /* Ширина контейнера */
 }
 
+.container-3 {
+    display: flex; /* Включаем flexbox */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    justify-content: space-around; /* Равномерное распределение по ширине */
+    background-color: #f0f0f0; /* Цвет фона контейнера */
+    border: 2px solid #ccc; /* Граница контейнера */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 2200px; /* Максимальная ширина контейнера */
+}
+
 .block {
     width: 200px;
     height: 200px;
@@ -59,6 +71,20 @@ body {
     height: 200px;
     background-color: #ff5722; /* Цвет фона блока */
     border-radius: 10px;
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50; /* Цвет фона блока */
+    color: white;
+    display: flex; /* Используем flex для выравнивания текста внутри блока */
+    justify-content: center; /* Центровка текста по горизонтали */
+    align-items: center; /* Центровка текста по вертикали */
+    border-radius: 5px;
+    margin: 10px; /* Отступы между блоками */
+    font-size: 18px; /* Размер текста */
+    font-weight: bold;
 }
 
 .centered-image {
