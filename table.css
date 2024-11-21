@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #bdbdbd; 
+    color: #333; 
+    text-align: left; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+
+td {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #c4f8fc;
+}
+
+tr:nth-child(odd) {
+    background-color: #dfe2ff;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #007BFF;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end; /* Размещение ссылок в правой части шапки */
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
