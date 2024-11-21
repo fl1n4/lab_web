@@ -3,6 +3,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.header {
+    display: flex; /* Выравнивание элементов в строку */
+    justify-content: flex-end; /* Размещение ссылок в правой части шапки */
+    background-color: #333; /* Тёмный фон */
+    padding: 10px 20px; /* Отступы внутри шапки */
+}
+
+.header a {
+    color: #fff; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-left: 20px; /* Отступ между ссылками */
+    font-size: 18px; /* Размер шрифта */
+}
+
+.header a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: #00bcd4; /* Светлый цвет при наведении */
+}
+
 .content {
     display: flex;
     justify-content: space-between;
