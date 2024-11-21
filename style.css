@@ -4,64 +4,64 @@ body {
 }
 
 .header {
-    display: flex; /* Выравнивание элементов в строку */
+    display: flex;
     justify-content: flex-end; /* Размещение ссылок в правой части шапки */
-    background-color: #333; /* Тёмный фон */
-    padding: 10px 20px; /* Отступы внутри шапки */
+    background-color: #333;
+    padding: 10px 20px;
 }
 
 .header a {
-    color: #fff; /* Белый цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
-    margin-left: 20px; /* Отступ между ссылками */
-    font-size: 18px; /* Размер шрифта */
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 .header a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
-    color: #00bcd4; /* Светлый цвет при наведении */
+    text-decoration: underline;
+    color: #00bcd4;
 }
 
 .container {
-    display: flex; /* Используем flexbox */
-    flex-direction: column; /* Элементы располагаются вертикально */
-    align-items: center; /* Центровка по горизонтали */
-    background-color: #f0f0f0; /* Цвет фона контейнера */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 600px; /* Ширина контейнера */
+    max-width: 600px;
 }
 
 .container-2 {
-    display: flex; /* Включаем flexbox */
-    justify-content: center; /* Центровка по горизонтали */
-    align-items: center; /* Центровка по вертикали */
-    background-color: #f0f0f0; /* Цвет фона контейнера */
-    height: 400px; /* Высота контейнера */
-    border: 1px solid #ccc; /* Граница для контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 400px;
+    border: 1px solid #ccc;
     border-radius: 10px;
     margin: 20px auto; /* Центрирование контейнера */
-    max-width: 600px; /* Ширина контейнера */
+    max-width: 600px;
 }
 
 .container-3 {
-    display: flex; /* Включаем flexbox */
+    display: flex;
     flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
     justify-content: space-around; /* Равномерное распределение по ширине */
-    background-color: #f0f0f0; /* Цвет фона контейнера */
-    border: 2px solid #ccc; /* Граница контейнера */
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 2200px; /* Максимальная ширина контейнера */
+    max-width: 2200px;
 }
 
 .block {
     width: 200px;
     height: 200px;
-    background-color: #4caf50; /* Цвет фона блока */
+    background-color: #4caf50;
     margin-bottom: 20px; /* Отступ снизу для разделения с изображением */
     border-radius: 10px;
 }
@@ -69,27 +69,79 @@ body {
 .block-2 {
     width: 200px;
     height: 200px;
-    background-color: #ff5722; /* Цвет фона блока */
+    background-color: #ff5722;
     border-radius: 10px;
 }
 
 .block-3 {
     width: 200px;
     height: 200px;
-    background-color: #4caf50; /* Цвет фона блока */
+    background-color: #4caf50;
     color: white;
-    display: flex; /* Используем flex для выравнивания текста внутри блока */
+    display: flex;
     justify-content: center; /* Центровка текста по горизонтали */
     align-items: center; /* Центровка текста по вертикали */
     border-radius: 5px;
-    margin: 10px; /* Отступы между блоками */
-    font-size: 18px; /* Размер текста */
+    margin: 10px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .centered-image {
     width: 200px;
     display: block; /* Отображаем как блочный элемент */
+}
+
+.position-container {
+    background-color: #f0f0f0;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.square.red {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+.square.blue {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+}
+
+.square.green {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+.fixed-cat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.fixed-cat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .content {
