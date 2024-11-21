@@ -40,3 +40,22 @@ caption {
     text-align: center;
     color: #007BFF;
 }
+
+.header {
+    display: flex;
+    justify-content: flex-end; /* Размещение ссылок в правой части шапки */
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
