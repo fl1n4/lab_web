@@ -34,11 +34,30 @@ body {
     max-width: 600px; /* Ширина контейнера */
 }
 
+.container-2 {
+    display: flex; /* Включаем flexbox */
+    justify-content: center; /* Центровка по горизонтали */
+    align-items: center; /* Центровка по вертикали */
+    background-color: #f0f0f0; /* Цвет фона контейнера */
+    height: 400px; /* Высота контейнера */
+    border: 1px solid #ccc; /* Граница для контейнера */
+    border-radius: 10px;
+    margin: 20px auto; /* Центрирование контейнера */
+    max-width: 600px; /* Ширина контейнера */
+}
+
 .block {
     width: 200px;
     height: 200px;
     background-color: #4caf50; /* Цвет фона блока */
     margin-bottom: 20px; /* Отступ снизу для разделения с изображением */
+    border-radius: 10px;
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #ff5722; /* Цвет фона блока */
     border-radius: 10px;
 }
 
@@ -83,6 +102,7 @@ h1 {
     margin-bottom: 20px;
     margin: 10px 0;
 }
+
 
 h2, p, ul, ol, a {
     font-size: 18px;
