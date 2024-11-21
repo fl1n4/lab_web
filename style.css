@@ -22,6 +22,31 @@ body {
     color: #00bcd4; /* Светлый цвет при наведении */
 }
 
+.container {
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центровка по горизонтали */
+    background-color: #f0f0f0; /* Цвет фона контейнера */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px; /* Ширина контейнера */
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50; /* Цвет фона блока */
+    margin-bottom: 20px; /* Отступ снизу для разделения с изображением */
+    border-radius: 10px;
+}
+
+.centered-image {
+    width: 200px;
+    display: block; /* Отображаем как блочный элемент */
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -51,12 +76,20 @@ img {
     border-radius: 10px;
 }
 
-h1, h2, p, ul, ol, a {
+h1 {
+    text-align: center; /* Центровка заголовка по горизонтали */
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    margin: 10px 0;
+}
+
+h2, p, ul, ol, a {
     font-size: 18px;
     color: #333;
 }
 
-h1, h2 {
+h2 {
     margin: 10px 0;
 }
 
